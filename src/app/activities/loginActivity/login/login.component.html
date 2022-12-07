@@ -1,0 +1,46 @@
+<div class="login">
+    <div class="center">
+        <div class="top">
+            <app-navbar></app-navbar>
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <h1>Unlocking YOUR Business
+                    Growth
+                </h1>
+                <div>
+                    <div>
+                        <div class="scrn"><video src=""></video></div>
+                        <img class="m" src="../../../../assets/keyboard.png" alt="boardkey" width="80%">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <div>
+                        <h3>Welcome to MyDough</h3>
+                    </div>
+                    <div>
+                        <form>
+                            <div class="form_input">
+                                <input matInput placeholder="Email">
+                                <button mat-icon-button matSuffix (click)="hide = !hide">
+                                    <mat-icon>account_box </mat-icon>
+                                </button>
+                            </div>
+                            <div class="form_input">
+                                <input matInput placeholder="Password">
+                                <button mat-icon-button matSuffix (click)="hide = !hide">
+                                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                </button>
+                            </div>
+                            <button (click)="navTo('dashboard')" class="ll">
+                                Login
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
